@@ -3,14 +3,23 @@ export default {
   head: {
     title: 'ApplicaSet'
   },
+  components: true,
   buildModules: [
     '@nuxt/typescript-build',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    'nuxt-protected-mailto'
   ],
   typescript: {
     typeCheck: {
       eslint: {
         files: './**/*.{ts,js,vue}'
+      }
+    }
+  },
+  build: {
+    html: {
+      minify: {
+        decodeEntities: false
       }
     }
   }

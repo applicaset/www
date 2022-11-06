@@ -116,7 +116,9 @@
           Contact Us
         </div>
         <div class="mx-auto w-auto">
-          contact@applicaset.com
+          <Mailto mail="contact@applicaset.com" subject="Consultant">
+            contact@applicaset.com
+          </Mailto>
         </div>
       </div>
     </div>
