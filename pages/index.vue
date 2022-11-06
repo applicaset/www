@@ -137,7 +137,7 @@
     </main>
     <footer>
       <div class="container mx-auto grid items-center p-4">
-        <div class="mx-auto w-auto">
+        <div class="mx-auto w-auto text-gray-500 font-light">
           &copy; 2022 ApplicaSet
         </div>
       </div>
@@ -150,11 +150,11 @@ html {
 }
 
 .button {
-  @apply px-4 py-2 rounded;
+  @apply px-8 py-2 rounded;
 }
 
 .button.primary {
-  @apply bg-teal-700 text-white px-4 py-2 rounded;
+  @apply bg-teal-700 text-white;
 }
 
 .text-primary {
