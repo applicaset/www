@@ -9,13 +9,19 @@
         <div>
           <ul class="flex flex-row gap-4">
             <li>
-              <nuxt-link :to="{ path: '/',hash:'#services'}" class="p-2">Services</nuxt-link>
+              <nuxt-link :to="{ path: '/',hash:'#services'}" class="p-2">
+                Services
+              </nuxt-link>
             </li>
             <li>
-              <nuxt-link :to="{ path: '/',hash:'#contact'}" class="p-2">Contact</nuxt-link>
+              <nuxt-link :to="{ path: '/',hash:'#contact'}" class="p-2">
+                Contact
+              </nuxt-link>
             </li>
             <li>
-              <nuxt-link :to="{ path: '/',hash:'#about'}" class="p-2">About</nuxt-link>
+              <nuxt-link :to="{ path: '/',hash:'#about'}" class="p-2">
+                About
+              </nuxt-link>
             </li>
           </ul>
         </div>
@@ -29,7 +35,8 @@
               Migrate to <span class="text-primary">any</span> cloud easily
             </div>
             <div class="text-lg font-light">
-              We are here as your tech partner helping you create, migrate & optimize your software products in any cloud.
+              We are here as your tech partner helping you create, migrate & optimize your software products in any
+              cloud.
             </div>
             <div class="flex gap-4">
               <nuxt-link :to="{ path: '/',hash:'#contact'}" class="button primary">
@@ -54,7 +61,11 @@
             Custom software services and <span class="text-primary">cloud</span> solutions
           </div>
           <div class="grid grid-cols-3 gap-8">
-            <div v-for="(service, i) in services" :key="i" class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center">
+            <div
+              v-for="(service, i) in services"
+              :key="i"
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
               <img :src="service.image" :alt="service.title" width="64" height="64">
               <div class="text-2xl font-light">
                 {{ service.title }}
@@ -105,40 +116,40 @@
 <script>
 
 export default {
-  data() {
+  data () {
     return {
       services: [
         {
           title: 'Consulting',
           image: 'images/technical-consultation.svg',
-          description: 'Advice and solutions for modernizing your infrastructure',
+          description: 'Advice and solutions for modernizing your infrastructure'
         },
         {
           title: 'Migration',
           image: 'images/migration.svg',
-          description: 'Transform your business by migrating to the cloud',
+          description: 'Transform your business by migrating to the cloud'
         },
         {
           title: 'Development',
           image: 'images/development.svg',
-          description: 'Accelerating innovation by using great tools',
+          description: 'Accelerating innovation by using great tools'
         },
         {
           title: 'Security',
           image: 'images/security.svg',
-          description: 'The right team for the right project, No concern, just grow',
+          description: 'The right team for the right project, No concern, just grow'
         },
         {
           title: 'DevOps',
           image: 'images/devops.svg',
-          description: 'Our DevOps engineers will work with your team on defining a workflow and tool chain',
+          description: 'Our DevOps engineers will work with your team on defining a workflow and tool chain'
         },
         {
           title: 'Scale',
           image: 'images/scale.svg',
-          description: 'Do not struggle when success forces you to scale rapidly',
+          description: 'Do not struggle when success forces you to scale rapidly'
         }
-      ],
+      ]
     }
   }
 }
