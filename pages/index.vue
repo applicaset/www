@@ -2,20 +2,20 @@
   <div>
     <header class="border-b border-teal-700/20">
       <nav class="container mx-auto p-2 flex justify-between items-center">
-        <a href="#" class="flex items-center">
+        <nuxt-link :to="{ path: '/',hash:'#'}" class="flex items-center">
           <img src="images/logo.svg" alt="ApplicaSet" width="48" height="48">
           <span class="mx-2">ApplicaSet</span>
-        </a>
+        </nuxt-link>
         <div>
           <ul class="flex flex-row gap-4">
             <li>
-              <a href="#services" class="p-2">Services</a>
+              <nuxt-link :to="{ path: '/',hash:'#services'}" class="p-2">Services</nuxt-link>
             </li>
             <li>
-              <a href="#contact" class="p-2">Contact</a>
+              <nuxt-link :to="{ path: '/',hash:'#contact'}" class="p-2">Contact</nuxt-link>
             </li>
             <li>
-              <a href="#about" class="p-2">About</a>
+              <nuxt-link :to="{ path: '/',hash:'#about'}" class="p-2">About</nuxt-link>
             </li>
           </ul>
         </div>
@@ -31,9 +31,9 @@
             We are here as your tech partner helping you create, migrate & optimize your software products in any cloud.
           </div>
           <div class="flex gap-4">
-            <a href="#contact" class="button primary">
+            <nuxt-link :to="{ path: '/',hash:'#contact'}" class="button primary">
               Contact Us
-            </a>
+            </nuxt-link>
           </div>
           <div class="text-primary text-sm">
             Contact us now for a free consultation meeting.
@@ -128,7 +128,8 @@
           About Us
         </div>
         <div class="mx-auto w-auto">
-          We are a group engineers and entrepreneurs who are interested in cloud technologies and upgrading infrastructures.
+          We are a group engineers and entrepreneurs who are interested in cloud technologies and upgrading
+          infrastructures.
         </div>
       </div>
     </div>
@@ -142,12 +143,18 @@
   </div>
 </template>
 <style>
+html {
+  scroll-behavior: smooth;
+}
+
 .button {
   @apply px-4 py-2 rounded;
 }
+
 .button.primary {
   @apply bg-teal-700 text-white px-4 py-2 rounded;
 }
+
 .text-primary {
   color: #008B8B;
 }
