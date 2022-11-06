@@ -54,12 +54,12 @@
         </div>
         <div class="grid grid-cols-3 gap-8">
           <div class="bg-white rounded p-4 shadow flex flex-col gap-4 items-center">
-            <img src="images/consulting.svg" alt="Consulting" width="64" height="64">
+            <img src="images/technical-consultation.svg" alt="Consulting" width="64" height="64">
             <div class="text-xl">
               Consulting
             </div>
             <div class="text-center">
-              Transform your business by migrating to cloud
+              Advice and solutions for modernizing your infrastructure
             </div>
           </div>
           <div class="bg-white rounded p-4 shadow flex flex-col gap-4 items-center">
@@ -68,16 +68,16 @@
               Migration
             </div>
             <div class="text-center">
-              Your application can have multiple Experience Domains
+              Transform your business by migrating to the cloud
             </div>
           </div>
           <div class="bg-white rounded p-4 shadow flex flex-col gap-4 items-center">
-            <img src="images/development.svg" alt="Development" width="64" height="64">
+            <img src="images/accelerate-innovation.svg" alt="Development" width="64" height="64">
             <div class="text-xl">
               Development
             </div>
             <div class="text-center">
-              Accelerating Innovation one application at a time
+              Accelerating innovation by using great tools
             </div>
           </div>
           <div class="bg-white rounded p-4 shadow flex flex-col gap-4 items-center">
@@ -114,6 +114,9 @@
       <div class="container mx-auto grid items-center py-16 gap-8">
         <div class="text-4xl text-light mx-auto w-auto">
           Contact Us
+        </div>
+        <div class="mx-auto w-auto">
+          contact@applicaset.com
         </div>
       </div>
     </div>
