@@ -54,58 +54,13 @@
             Custom software services and <span class="text-primary">cloud</span> solutions
           </div>
           <div class="grid grid-cols-3 gap-8">
-            <div class="bg-white rounded p-4 shadow flex flex-col gap-4 items-center">
-              <img src="images/technical-consultation.svg" alt="Consulting" width="64" height="64">
+            <div v-for="(service, i) in services" :key="i" class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center">
+              <img :src="service.image" :alt="service.title" width="64" height="64">
               <div class="text-2xl font-light">
-                Consulting
+                {{ service.title }}
               </div>
               <div class="text-center text-lg font-light">
-                Advice and solutions for modernizing your infrastructure
-              </div>
-            </div>
-            <div class="bg-white rounded p-4 shadow flex flex-col gap-4 items-center">
-              <img src="images/migration.svg" alt="Migration" width="64" height="64">
-              <div class="text-2xl font-light">
-                Migration
-              </div>
-              <div class="text-center text-lg font-light">
-                Transform your business by migrating to the cloud
-              </div>
-            </div>
-            <div class="bg-white rounded p-4 shadow flex flex-col gap-4 items-center">
-              <img src="images/development.svg" alt="Development" width="64" height="64">
-              <div class="text-2xl font-light">
-                Development
-              </div>
-              <div class="text-center text-lg font-light">
-                Accelerating innovation by using great tools
-              </div>
-            </div>
-            <div class="bg-white rounded p-4 shadow flex flex-col gap-4 items-center">
-              <img src="images/security.svg" alt="Security" width="64" height="64">
-              <div class="text-2xl font-light">
-                Security
-              </div>
-              <div class="text-center text-lg font-light">
-                The right team for the right project, No concern, just grow
-              </div>
-            </div>
-            <div class="bg-white rounded p-4 shadow flex flex-col gap-4 items-center">
-              <img src="images/devops.svg" alt="DevOps" width="64" height="64">
-              <div class="text-2xl font-light">
-                DevOps
-              </div>
-              <div class="text-center text-lg font-light">
-                Our DevOps engineers will work with your team on defining a workflow and tool chain
-              </div>
-            </div>
-            <div class="bg-white rounded p-4 shadow flex flex-col gap-4 items-center">
-              <img src="images/scale.svg" alt="Scale" width="64" height="64">
-              <div class="text-2xl font-light">
-                Scale
-              </div>
-              <div class="text-center text-lg font-light">
-                Do not struggle when success forces you to scale rapidly
+                {{ service.description }}
               </div>
             </div>
           </div>
@@ -113,6 +68,9 @@
       </div>
       <div id="contact">
         <div class="container mx-auto grid items-center py-16 gap-8">
+          <div class="mx-auto w-auto">
+            <img src="images/mail.svg" alt="Cloud" width="64" height="45">
+          </div>
           <div class="text-4xl font-light mx-auto w-auto">
             <span class="text-primary">Contact</span> Us
           </div>
@@ -144,6 +102,47 @@
     </footer>
   </div>
 </template>
+<script>
+
+export default {
+  data() {
+    return {
+      services: [
+        {
+          title: 'Consulting',
+          image: 'images/technical-consultation.svg',
+          description: 'Advice and solutions for modernizing your infrastructure',
+        },
+        {
+          title: 'Migration',
+          image: 'images/migration.svg',
+          description: 'Transform your business by migrating to the cloud',
+        },
+        {
+          title: 'Development',
+          image: 'images/development.svg',
+          description: 'Accelerating innovation by using great tools',
+        },
+        {
+          title: 'Security',
+          image: 'images/security.svg',
+          description: 'The right team for the right project, No concern, just grow',
+        },
+        {
+          title: 'DevOps',
+          image: 'images/devops.svg',
+          description: 'Our DevOps engineers will work with your team on defining a workflow and tool chain',
+        },
+        {
+          title: 'Scale',
+          image: 'images/scale.svg',
+          description: 'Do not struggle when success forces you to scale rapidly',
+        }
+      ],
+    }
+  }
+}
+</script>
 <style>
 html {
   scroll-behavior: smooth;
