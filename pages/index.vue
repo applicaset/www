@@ -107,7 +107,7 @@
     <footer>
       <div class="container mx-auto grid items-center p-4">
         <div class="mx-auto w-auto text-gray-500 font-light">
-          &copy; 2022 ApplicaSet
+          &copy; 2022-2023 ApplicaSet
         </div>
       </div>
     </footer>
