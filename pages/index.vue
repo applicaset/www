@@ -6,7 +6,7 @@
           <img src="images/logo.svg" alt="ApplicaSet" width="48" height="48">
           <span class="mx-2">ApplicaSet</span>
         </nuxt-link>
-        <div>
+        <div class="hidden md:block">
           <ul class="flex flex-row gap-4">
             <li>
               <nuxt-link :to="{ path: '/',hash:'#services'}" class="p-2">
@@ -28,17 +28,17 @@
       </nav>
     </header>
     <main class="relative">
-      <div>
-        <div class="container mx-auto grid items-center py-16 grid-cols-2">
+      <div class="px-2 md:px-0">
+        <div class="container mx-auto grid items-center py-16 md:grid-cols-2 grid-cols-1">
           <div class="grid gap-4">
-            <div class="text-5xl font-bold">
+            <div class="text-3xl md:text-5xl font-bold">
               Migrate to <span class="text-primary">any</span> cloud easily
             </div>
             <div class="text-lg font-light">
               We are here as your tech partner helping you create, migrate & optimize your software products in any
               cloud.
             </div>
-            <div class="flex gap-4">
+            <div class="flex gap-4 justify-center md:justify-start">
               <nuxt-link :to="{ path: '/',hash:'#contact'}" class="button primary">
                 Contact Us
               </nuxt-link>
@@ -47,12 +47,12 @@
               Contact us now for a free consultation meeting.
             </div>
           </div>
-          <div>
+          <div class="order-first md:order-last">
             <img src="images/cloud.svg" alt="Cloud" width="512" height="512">
           </div>
         </div>
       </div>
-      <div id="services" class="bg-gray-100">
+      <div id="services" class="px-2 md:px-0 bg-gray-100">
         <div class="container mx-auto grid items-center py-16 gap-8">
           <div class="text-4xl font-light mx-auto w-auto">
             Our <span class="text-primary">Services</span>
@@ -60,7 +60,7 @@
           <div class="mx-auto w-auto text-lg font-light">
             Custom software services and <span class="text-primary">cloud</span> solutions
           </div>
-          <div class="grid grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div
               v-for="(service, i) in services"
               :key="i"
@@ -92,12 +92,12 @@
           </div>
         </div>
       </div>
-      <div id="about" class="bg-gray-100">
+      <div id="about" class="px-2 md:px-0 bg-gray-100">
         <div class="container mx-auto grid items-center py-16 gap-8">
           <div class="text-4xl font-light mx-auto w-auto">
             <span class="text-primary">About</span> Us
           </div>
-          <div class="mx-auto w-auto text-lg font-light">
+          <div class="mx-auto w-auto text-lg font-light text-center">
             We are a group engineers and entrepreneurs who are interested in cloud technologies and upgrading
             infrastructures.
           </div>
