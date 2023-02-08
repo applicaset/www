@@ -31,10 +31,10 @@
       <div class="px-2 md:px-0">
         <div class="container mx-auto grid items-center py-16 md:grid-cols-2 grid-cols-1">
           <div class="grid gap-4">
-            <div class="text-3xl md:text-5xl font-bold">
+            <div class="text-3xl md:text-5xl">
               Migrate to <span class="text-primary">any</span> cloud easily
             </div>
-            <div class="text-lg font-light">
+            <div class="text-lg">
               We are here as your tech partner helping you create, migrate & optimize your software products in any
               cloud.
             </div>
@@ -47,17 +47,17 @@
               Contact us now for a free consultation meeting.
             </div>
           </div>
-          <div class="order-first md:order-last">
+          <div class="order-first md:order-last text-center">
             <img src="images/cloud.svg" alt="Cloud" width="512" height="512">
           </div>
         </div>
       </div>
       <div id="services" class="px-2 md:px-0 bg-gray-100">
         <div class="container mx-auto grid items-center py-16 gap-8">
-          <div class="text-4xl font-light mx-auto w-auto">
+          <div class="text-4xl mx-auto w-auto">
             Our <span class="text-primary">Services</span>
           </div>
-          <div class="mx-auto w-auto text-lg font-light">
+          <div class="mx-auto w-auto text-lg">
             Custom software services and <span class="text-primary">cloud</span> solutions
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -67,10 +67,10 @@
               class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
             >
               <img :src="service.image" :alt="service.title" width="64" height="64">
-              <div class="text-2xl font-light">
+              <div class="text-2xl">
                 {{ service.title }}
               </div>
-              <div class="text-center text-lg font-light">
+              <div class="text-center text-lg">
                 {{ service.description }}
               </div>
             </div>
@@ -82,10 +82,10 @@
           <div class="mx-auto w-auto">
             <img src="images/mail.svg" alt="Cloud" width="64" height="45">
           </div>
-          <div class="text-4xl font-light mx-auto w-auto">
+          <div class="text-4xl mx-auto w-auto">
             <span class="text-primary">Contact</span> Us
           </div>
-          <div class="mx-auto w-auto text-xl font-light">
+          <div class="mx-auto w-auto text-xl">
             <Mailto mail="contact@applicaset.com" subject="Consultant">
               contact@applicaset.com
             </Mailto>
@@ -94,10 +94,10 @@
       </div>
       <div id="about" class="px-2 md:px-0 bg-gray-100">
         <div class="container mx-auto grid items-center py-16 gap-8">
-          <div class="text-4xl font-light mx-auto w-auto">
+          <div class="text-4xl mx-auto w-auto">
             <span class="text-primary">About</span> Us
           </div>
-          <div class="mx-auto w-auto text-lg font-light text-center">
+          <div class="mx-auto w-auto text-lg text-center">
             We are a group engineers and entrepreneurs who are interested in cloud technologies and upgrading
             infrastructures.
           </div>
@@ -106,7 +106,7 @@
     </main>
     <footer>
       <div class="container mx-auto grid items-center p-4">
-        <div class="mx-auto w-auto text-gray-500 font-light">
+        <div class="mx-auto w-auto text-gray-500">
           &copy; 2022-2023 ApplicaSet
         </div>
       </div>
@@ -114,7 +114,6 @@
   </div>
 </template>
 <script>
-
 export default {
   data () {
     return {

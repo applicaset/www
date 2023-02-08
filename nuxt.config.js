@@ -19,8 +19,14 @@ export default {
   buildModules: [
     '@nuxt/typescript-build',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
     'nuxt-protected-mailto'
   ],
+  googleFonts: {
+    families: {
+      'Open+Sans': true
+    }
+  },
   typescript: {
     typeCheck: {
       eslint: {
