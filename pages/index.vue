@@ -2,24 +2,24 @@
   <div>
     <header class="border-b border-teal-700/20 bg-white sticky top-0 z-50">
       <nav class="container mx-auto p-2 flex justify-between items-center">
-        <nuxt-link :to="{ path: '/',hash:'#'}" class="flex items-center">
-          <img src="images/logo.svg" alt="ApplicaSet" width="48" height="48">
-          <span class="mx-2">ApplicaSet</span>
+        <nuxt-link :to="{ path: '/', hash: '#' }" class="flex items-center">
+          <img src="images/logo.svg" alt="ApplicaSet" width="48" height="48" />
+          <span class="mx-2 hidden sm:block">ApplicaSet</span>
         </nuxt-link>
-        <div class="hidden md:block">
+        <div>
           <ul class="flex flex-row gap-4">
             <li>
-              <nuxt-link :to="{ path: '/',hash:'#services'}" class="p-2">
+              <nuxt-link :to="{ path: '/', hash: '#services' }" class="p-2">
                 Services
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link :to="{ path: '/',hash:'#contact'}" class="p-2">
+              <nuxt-link :to="{ path: '/', hash: '#contact' }" class="p-2">
                 Contact
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link :to="{ path: '/',hash:'#about'}" class="p-2">
+              <nuxt-link :to="{ path: '/', hash: '#about' }" class="p-2">
                 About
               </nuxt-link>
             </li>
@@ -29,26 +29,33 @@
     </header>
     <main class="relative">
       <div class="px-2 md:px-0">
-        <div class="container mx-auto grid items-center py-16 md:grid-cols-2 grid-cols-1">
+        <div
+          class="container mx-auto grid items-center py-16 md:grid-cols-2 grid-cols-1"
+        >
           <div class="grid gap-4">
-            <div class="text-3xl md:text-5xl">
+            <div class="text-3xl md:text-5xl text-center md:text-start">
               Migrate to <span class="text-primary">any</span> cloud easily
             </div>
-            <div class="text-lg">
-              We are here as your tech partner helping you create, migrate & optimize your software products in any
-              cloud.
+            <div class="text-lg text-center md:text-start">
+              Seamless cloud solutions for your software. Let us be your tech
+              partner for creating, migrating, and optimizing in any cloud.
             </div>
             <div class="flex gap-4 justify-center md:justify-start">
-              <nuxt-link :to="{ path: '/',hash:'#contact'}" class="button primary">
+              <nuxt-link
+                :to="{ path: '/', hash: '#contact' }"
+                class="button primary"
+              >
                 Contact Us
               </nuxt-link>
             </div>
-            <div class="text-primary text-sm">
+            <div class="text-primary text-sm text-center md:text-start">
               Contact us now for a free consultation meeting.
             </div>
           </div>
-          <div class="order-first md:order-last text-center">
-            <img src="images/cloud.svg" alt="Cloud" width="512" height="512">
+          <div
+            class="order-first md:order-last flex justify-center md:justify-end"
+          >
+            <img src="images/cloud.svg" alt="Cloud" width="512" height="512" />
           </div>
         </div>
       </div>
@@ -58,15 +65,22 @@
             Our <span class="text-primary">Services</span>
           </div>
           <div class="mx-auto w-auto text-lg">
-            Custom software services and <span class="text-primary">cloud</span> solutions
+            Custom software and
+            <span class="text-primary">cloud</span> solutions to fit your
+            business needs
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div
               v-for="(service, i) in services"
               :key="i"
               class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
             >
-              <img :src="service.image" :alt="service.title" width="64" height="64">
+              <img
+                :src="service.image"
+                :alt="service.title"
+                width="64"
+                height="64"
+              />
               <div class="text-2xl">
                 {{ service.title }}
               </div>
@@ -80,7 +94,7 @@
       <div id="contact">
         <div class="container mx-auto grid items-center py-16 gap-8">
           <div class="mx-auto w-auto">
-            <img src="images/mail.svg" alt="Cloud" width="64" height="45">
+            <img src="images/mail.svg" alt="Cloud" width="64" height="45" />
           </div>
           <div class="text-4xl mx-auto w-auto">
             <span class="text-primary">Contact</span> Us
@@ -98,8 +112,13 @@
             <span class="text-primary">About</span> Us
           </div>
           <div class="mx-auto w-auto text-lg text-center">
-            We are a group engineers and entrepreneurs who are interested in cloud technologies and upgrading
-            infrastructures.
+            At ApplicaSet, we are a team of forward-thinking engineers and
+            entrepreneurs with a passion for leveraging cutting-edge cloud
+            technologies to help businesses achieve their goals.
+            <br />
+            Our expertise in infrastructure upgrades, software development, and
+            cloud solutions allows us to deliver innovative and tailored
+            solutions that drive growth and maximize ROI for our clients.
           </div>
         </div>
       </div>
@@ -115,43 +134,43 @@
 </template>
 <script>
 export default {
-  data () {
+  data() {
     return {
       services: [
         {
-          title: 'Consulting',
-          image: 'images/technical-consultation.svg',
-          description: 'Advice and solutions for modernizing your infrastructure'
+          title: "Consulting",
+          image: "images/technical-consultation.svg",
+          description: "Expert advice for your business",
         },
         {
-          title: 'Migration',
-          image: 'images/migration.svg',
-          description: 'Transform your business by migrating to the cloud'
+          title: "Migration",
+          image: "images/migration.svg",
+          description: "Seamlessly migrate your business to the cloud",
         },
         {
-          title: 'Development',
-          image: 'images/development.svg',
-          description: 'Accelerating innovation by using great tools'
+          title: "Development",
+          image: "images/development.svg",
+          description: "Accelerate your business with innovative tools",
         },
         {
-          title: 'Security',
-          image: 'images/security.svg',
-          description: 'The right team for the right project, No concern, just grow'
+          title: "Security",
+          image: "images/security.svg",
+          description: "Comprehensive security solutions for your business",
         },
         {
-          title: 'DevOps',
-          image: 'images/devops.svg',
-          description: 'Our DevOps engineers will work with your team on defining a workflow and tool chain'
+          title: "DevOps",
+          image: "images/devops.svg",
+          description: "Streamline your workflow with DevOps expertise",
         },
         {
-          title: 'Scale',
-          image: 'images/scale.svg',
-          description: 'Do not struggle when success forces you to scale rapidly'
-        }
-      ]
-    }
-  }
-}
+          title: "Scale",
+          image: "images/scale.svg",
+          description: "Scale your business with ease",
+        },
+      ],
+    };
+  },
+};
 </script>
 <style>
 html {
@@ -167,6 +186,6 @@ html {
 }
 
 .text-primary {
-  color: #008B8B;
+  color: #008b8b;
 }
 </style>
