@@ -3,8 +3,8 @@ module.exports = {
   content: [],
   theme: {
     fontFamily: {
-      sans: ['"Open Sans"'],
-    },
+      sans: ['"Open Sans"']
+    }
   },
-  plugins: [],
-};
+  plugins: []
+}

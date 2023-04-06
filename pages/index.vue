@@ -3,7 +3,7 @@
     <header class="border-b border-teal-700/20 bg-white sticky top-0 z-50">
       <nav class="container mx-auto p-2 flex justify-between items-center">
         <nuxt-link :to="{ path: '/', hash: '#' }" class="flex items-center">
-          <img src="images/logo.svg" alt="ApplicaSet" width="48" height="48" />
+          <img src="images/logo.svg" alt="ApplicaSet" width="48" height="48">
           <span class="mx-2 hidden sm:block">ApplicaSet</span>
         </nuxt-link>
         <div>
@@ -55,7 +55,7 @@
           <div
             class="order-first md:order-last flex justify-center md:justify-end"
           >
-            <img src="images/cloud.svg" alt="Cloud" width="512" height="512" />
+            <img src="images/cloud.svg" alt="Cloud" width="512" height="512">
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
                 :alt="service.title"
                 width="64"
                 height="64"
-              />
+              >
               <div class="text-2xl">
                 {{ service.title }}
               </div>
@@ -94,7 +94,7 @@
       <div id="contact">
         <div class="container mx-auto grid items-center py-16 gap-8">
           <div class="mx-auto w-auto">
-            <img src="images/mail.svg" alt="Cloud" width="64" height="45" />
+            <img src="images/mail.svg" alt="Cloud" width="64" height="45">
           </div>
           <div class="text-4xl mx-auto w-auto">
             <span class="text-primary">Contact</span> Us
@@ -115,7 +115,7 @@
             At ApplicaSet, we are a team of forward-thinking engineers and
             entrepreneurs with a passion for leveraging cutting-edge cloud
             technologies to help businesses achieve their goals.
-            <br />
+            <br>
             Our expertise in infrastructure upgrades, software development, and
             cloud solutions allows us to deliver innovative and tailored
             solutions that drive growth and maximize ROI for our clients.
@@ -134,43 +134,43 @@
 </template>
 <script>
 export default {
-  data() {
+  data () {
     return {
       services: [
         {
-          title: "Consulting",
-          image: "images/technical-consultation.svg",
-          description: "Expert advice for your business",
+          title: 'Consulting',
+          image: 'images/technical-consultation.svg',
+          description: 'Expert advice for your business'
         },
         {
-          title: "Migration",
-          image: "images/migration.svg",
-          description: "Seamlessly migrate your business to the cloud",
+          title: 'Migration',
+          image: 'images/migration.svg',
+          description: 'Seamlessly migrate your business to the cloud'
         },
         {
-          title: "Development",
-          image: "images/development.svg",
-          description: "Accelerate your business with innovative tools",
+          title: 'Development',
+          image: 'images/development.svg',
+          description: 'Accelerate your business with innovative tools'
         },
         {
-          title: "Security",
-          image: "images/security.svg",
-          description: "Comprehensive security solutions for your business",
+          title: 'Security',
+          image: 'images/security.svg',
+          description: 'Comprehensive security solutions for your business'
         },
         {
-          title: "DevOps",
-          image: "images/devops.svg",
-          description: "Streamline your workflow with DevOps expertise",
+          title: 'DevOps',
+          image: 'images/devops.svg',
+          description: 'Streamline your workflow with DevOps expertise'
         },
         {
-          title: "Scale",
-          image: "images/scale.svg",
-          description: "Scale your business with ease",
-        },
-      ],
-    };
-  },
-};
+          title: 'Scale',
+          image: 'images/scale.svg',
+          description: 'Scale your business with ease'
+        }
+      ]
+    }
+  }
+}
 </script>
 <style>
 html {
