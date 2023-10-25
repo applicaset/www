@@ -2,29 +2,34 @@
   <div>
     <header class="border-b border-teal-700/20 bg-white sticky top-0 z-50">
       <nav class="container mx-auto p-2 flex justify-between items-center">
-        <nuxt-link :to="{ path: '/', hash: '#' }" class="flex items-center">
+        <nuxt-link :to="{ path: '/', hash: '#' }" :external="true" class="flex items-center">
           <img src="images/logo.svg" alt="ApplicaSet" width="48" height="48">
           <span class="mx-2 hidden sm:block">ApplicaSet</span>
         </nuxt-link>
-        <div>
-          <ul class="flex flex-row gap-4">
-            <li>
-              <nuxt-link :to="{ path: '/', hash: '#services' }" class="p-2">
-                Services
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link :to="{ path: '/', hash: '#contact' }" class="p-2">
-                Contact
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link :to="{ path: '/', hash: '#about' }" class="p-2">
-                About
-              </nuxt-link>
-            </li>
-          </ul>
-        </div>
+        <ul class="flex flex-row gap-4">
+          <li>
+            <nuxt-link :to="{ path: '/', hash: '#services' }" :external="true" class="p-2">
+              Services
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="{ path: '/', hash: '#contact' }" :external="true" class="p-2">
+              Contact
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="{ path: '/', hash: '#about' }" :external="true" class="p-2">
+              About
+            </nuxt-link>
+          </li>
+        </ul>
+        <ul class="flex flex-row gap-4">
+          <li>
+            <a href="https://console.applicaset.com" class="p-2 button primary">
+              Console
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="relative">
@@ -43,13 +48,14 @@
             <div class="flex gap-4 justify-center md:justify-start">
               <nuxt-link
                 :to="{ path: '/', hash: '#contact' }"
+                :external="true"
                 class="button primary"
               >
                 Contact Us
               </nuxt-link>
             </div>
             <div class="text-primary text-sm text-center md:text-start">
-              Contact us now for a free consultation meeting.
+              Contact us now for a free consultation meeting or early access to console.
             </div>
           </div>
           <div
@@ -99,10 +105,13 @@
           <div class="text-4xl mx-auto w-auto">
             <span class="text-primary">Contact</span> Us
           </div>
-          <div class="mx-auto w-auto text-xl">
-            <Mailto mail="contact@applicaset.com" subject="Consultant">
+          <div class="mx-auto w-auto text-lg text-center">
+            Contact us now for a free consultation meeting or early access to console.
+          </div>
+          <div class="mx-auto w-auto text-xl button primary">
+            <a href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#97;&#112;&#112;&#108;&#105;&#99;&#97;&#115;&#101;&#116;&#46;&#99;&#111;&#109;">
               contact@applicaset.com
-            </Mailto>
+            </a>
           </div>
         </div>
       </div>
@@ -132,7 +141,7 @@
     </footer>
   </div>
 </template>
-<script>
+<script lang="ts">
 export default {
   data () {
     return {
