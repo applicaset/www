@@ -3,7 +3,7 @@
     <header class="border-b border-teal-700/20 bg-white sticky top-0 z-50">
       <nav class="container mx-auto p-2 flex justify-between items-center">
         <nuxt-link :to="{ path: '/', hash: '#' }" :external="true" class="flex items-center">
-          <img src="images/logo.svg" alt="ApplicaSet" width="48" height="48">
+          <img src="~/assets/images/logo.svg" alt="ApplicaSet" width="48" height="48">
           <span class="mx-2 hidden sm:block">ApplicaSet</span>
         </nuxt-link>
         <ul class="flex flex-row gap-4">
@@ -39,7 +39,12 @@
         >
           <div class="grid gap-4">
             <div class="text-3xl md:text-5xl text-center md:text-start">
-              Migrate to <span class="text-primary">any</span> cloud easily
+              Easy migrate to
+              <Transition name="fade">
+                <span v-if="showWord" class="text-primary fade-word">
+                  {{ currentWord }}
+                </span>
+              </Transition>
             </div>
             <div class="text-lg text-center md:text-start">
               Seamless cloud solutions for your software. Let us be your tech
@@ -61,7 +66,7 @@
           <div
             class="order-first md:order-last flex justify-center md:justify-end"
           >
-            <img src="images/cloud.svg" alt="Cloud" width="512" height="512">
+            <img src="~/assets/images/cloud.svg" alt="Cloud" width="512" height="512">
           </div>
         </div>
       </div>
@@ -77,21 +82,99 @@
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div
-              v-for="(service, i) in services"
-              :key="i"
               class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
             >
               <img
-                :src="service.image"
-                :alt="service.title"
+                src="~/assets/images/technical-consultation.svg"
+                alt="Consulting"
                 width="64"
                 height="64"
               >
               <div class="text-2xl">
-                {{ service.title }}
+                Consulting
               </div>
               <div class="text-center text-lg">
-                {{ service.description }}
+                Expert advice for your business
+              </div>
+            </div>
+            <div
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/migration.svg"
+                alt="Migration"
+                width="64"
+                height="64"
+              >
+              <div class="text-2xl">
+                Migration
+              </div>
+              <div class="text-center text-lg">
+                Seamlessly migrate your business to the cloud
+              </div>
+            </div>
+            <div
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/development.svg"
+                alt="Development"
+                width="64"
+                height="64"
+              >
+              <div class="text-2xl">
+                Development
+              </div>
+              <div class="text-center text-lg">
+                Accelerate your business with innovative tools
+              </div>
+            </div>
+            <div
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/security.svg"
+                alt="Security"
+                width="64"
+                height="64"
+              >
+              <div class="text-2xl">
+                Security
+              </div>
+              <div class="text-center text-lg">
+                Comprehensive security solutions for your business
+              </div>
+            </div>
+            <div
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/devops.svg"
+                alt="DevOps"
+                width="64"
+                height="64"
+              >
+              <div class="text-2xl">
+                DevOps
+              </div>
+              <div class="text-center text-lg">
+                Streamline your workflow with DevOps expertise
+              </div>
+            </div>
+            <div
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/scale.svg"
+                alt="Scale"
+                width="64"
+                height="64"
+              >
+              <div class="text-2xl">
+                Scale
+              </div>
+              <div class="text-center text-lg">
+                Scale your business with ease
               </div>
             </div>
           </div>
@@ -100,7 +183,7 @@
       <div id="contact">
         <div class="container mx-auto grid items-center py-16 gap-8">
           <div class="mx-auto w-auto">
-            <img src="images/mail.svg" alt="Cloud" width="64" height="45">
+            <img src="~/assets/images/mail.svg" alt="Cloud" width="64" height="45">
           </div>
           <div class="text-4xl mx-auto w-auto">
             <span class="text-primary">Contact</span> Us
@@ -141,45 +224,30 @@
     </footer>
   </div>
 </template>
-<script lang="ts">
-export default {
-  data () {
-    return {
-      services: [
-        {
-          title: 'Consulting',
-          image: 'images/technical-consultation.svg',
-          description: 'Expert advice for your business'
-        },
-        {
-          title: 'Migration',
-          image: 'images/migration.svg',
-          description: 'Seamlessly migrate your business to the cloud'
-        },
-        {
-          title: 'Development',
-          image: 'images/development.svg',
-          description: 'Accelerate your business with innovative tools'
-        },
-        {
-          title: 'Security',
-          image: 'images/security.svg',
-          description: 'Comprehensive security solutions for your business'
-        },
-        {
-          title: 'DevOps',
-          image: 'images/devops.svg',
-          description: 'Streamline your workflow with DevOps expertise'
-        },
-        {
-          title: 'Scale',
-          image: 'images/scale.svg',
-          description: 'Scale your business with ease'
-        }
-      ]
-    }
-  }
+<script setup>
+import { ref, watch, onMounted } from 'vue'
+
+const words = ref(['any cloud', 'AWS', 'GCP', 'Azure', 'ApplicaSet'])
+const currentIndex = ref(0)
+const currentWord = ref(words.value[currentIndex.value])
+const showWord = ref(true)
+
+const replaceWord = () => {
+  showWord.value = false
+  setTimeout(() => {
+    currentIndex.value = (currentIndex.value + 1) % words.value.length // Move to the next word in the list
+    currentWord.value = words.value[currentIndex.value]
+    showWord.value = true
+  }, 450)
 }
+
+watch(currentIndex, () => {
+  setTimeout(replaceWord, 3000)
+})
+
+onMounted(() => {
+  setTimeout(replaceWord, 3000)
+})
 </script>
 <style>
 html {
@@ -196,5 +264,15 @@ html {
 
 .text-primary {
   color: #008b8b;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
