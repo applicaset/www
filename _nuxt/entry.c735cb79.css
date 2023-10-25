@@ -1,0 +1,1 @@
+html{scroll-behavior:smooth}.button{border-radius:.25rem;padding:.5rem 2rem}.button.primary{--tw-bg-opacity:1;--tw-text-opacity:1;background-color:rgb(15 118 110/var(--tw-bg-opacity));color:rgb(255 255 255/var(--tw-text-opacity))}.text-primary{color:#008b8b}.fade-enter-active,.fade-leave-active{transition:opacity .5s ease}.fade-enter-from,.fade-leave-to{opacity:0}
