@@ -4,12 +4,17 @@
       <nav class="container mx-auto p-2 flex justify-between items-center">
         <nuxt-link :to="{ path: '/', hash: '#' }" :external="true" class="flex items-center">
           <img src="~/assets/images/logo.svg" alt="ApplicaSet" width="48" height="48">
-          <span class="mx-2 hidden sm:block">ApplicaSet</span>
+          <span class="mx-2">ApplicaSet</span>
         </nuxt-link>
-        <ul class="flex flex-row gap-4">
+        <ul class="flex-row gap-4 hidden sm:flex">
           <li>
             <nuxt-link :to="{ path: '/', hash: '#services' }" :external="true" class="p-2">
               Services
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="{ path: '/', hash: '#paas' }" :external="true" class="p-2">
+              PaaS
             </nuxt-link>
           </li>
           <li>
@@ -35,10 +40,10 @@
     <main class="relative">
       <div class="px-2 md:px-0">
         <div
-          class="container mx-auto grid items-center py-16 md:grid-cols-2 grid-cols-1"
+          class="container mx-auto grid items-center py-8 md:py-16 md:grid-cols-2 grid-cols-1"
         >
           <div class="grid gap-4">
-            <div class="text-3xl md:text-5xl text-center md:text-start">
+            <div class="text-2xl sm:text-3xl md:text-5xl text-center md:text-start mt-4 md:mt-0">
               Easy migrate to
               <Transition name="fade">
                 <span v-if="showWord" class="text-primary fade-word">
@@ -59,7 +64,7 @@
                 Contact Us
               </nuxt-link>
             </div>
-            <div class="text-primary text-sm text-center md:text-start">
+            <div class="text-sm text-center md:text-start">
               Contact us now for a free consultation meeting or early access to console.
             </div>
           </div>
@@ -72,10 +77,10 @@
       </div>
       <div id="services" class="px-2 md:px-0 bg-gray-100">
         <div class="container mx-auto grid items-center py-16 gap-8">
-          <div class="text-4xl mx-auto w-auto">
+          <div class="text-3xl md:text-4xl mx-auto w-auto">
             Our <span class="text-primary">Services</span>
           </div>
-          <div class="mx-auto w-auto text-lg">
+          <div class="mx-auto w-auto text-lg text-center">
             Custom software and
             <span class="text-primary">cloud</span> solutions to fit your
             business needs
@@ -101,7 +106,7 @@
               class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
             >
               <img
-                src="~/assets/images/migration.svg"
+                src="~/assets/images/accelerate.svg"
                 alt="Migration"
                 width="64"
                 height="64"
@@ -180,12 +185,123 @@
           </div>
         </div>
       </div>
-      <div id="contact">
+      <div id="paas" class="px-2 md:px-0">
+        <div class="container mx-auto grid items-center py-16 gap-8">
+          <div class="text-3xl md:text-4xl mx-auto w-auto">
+            <span class="text-primary">Platform</span> as a Service
+          </div>
+          <div class="mx-auto w-auto text-lg text-center">
+            Experience elevated flight with the force of <span class="text-primary">Kubernetes</span> engine
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/cloud-server.svg"
+                alt="Consulting"
+                width="64"
+                height="64"
+              >
+              <div class="text-2xl">
+                Managed Clusters
+              </div>
+              <div class="text-center text-lg">
+                We manage Kubernetes clusters. <br>
+                You use what you need.
+              </div>
+            </div>
+            <div
+              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/money-save.svg"
+                alt="Migration"
+                width="64"
+                height="64"
+              >
+              <div class="text-2xl">
+                Cost Effective
+              </div>
+              <div class="text-center text-lg">
+                Decrease your cost by paying for what you use, not for a whole cluster
+              </div>
+            </div>
+            <div
+              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/cloud-lock.svg"
+                alt="Development"
+                width="64"
+                height="64"
+              >
+              <div class="text-2xl">
+                Avoid Vendor Lock-in
+              </div>
+              <div class="text-center text-lg">
+                Most popular cloud services, like AWS, GCP, or Azure have <a href="https://en.wikipedia.org/wiki/Vendor_lock-in" target="_blank" class="underline">vendor lock-in</a>. <br>
+                But we care your freedom.
+              </div>
+            </div>
+            <div
+              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/multiple-regions.svg"
+                alt="Security"
+                width="64"
+                height="64"
+              >
+              <div class="text-2xl">
+                Multiple Regions
+              </div>
+              <div class="text-center text-lg">
+                Different clusters in US, Europe,<br>
+                and counting
+              </div>
+            </div>
+            <div
+              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/features.svg"
+                alt="DevOps"
+                width="64"
+                height="64"
+              >
+              <div class="text-2xl">
+                Fully Featured
+              </div>
+              <div class="text-center text-lg">
+                Most useful tools and features like are available on our clusters
+              </div>
+            </div>
+            <div
+              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/consulting.svg"
+                alt="Scale"
+                width="64"
+                height="64"
+              >
+              <div class="text-2xl">
+                Personalized Support
+              </div>
+              <div class="text-center text-lg">
+                We not just provide services, but support you to have no more concern about your infrastructure
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="bg-gray-100">
         <div class="container mx-auto grid items-center py-16 gap-8">
           <div class="mx-auto w-auto">
             <img src="~/assets/images/mail.svg" alt="Cloud" width="64" height="45">
           </div>
-          <div class="text-4xl mx-auto w-auto">
+          <div class="text-3xl md:text-4xl mx-auto w-auto">
             <span class="text-primary">Contact</span> Us
           </div>
           <div class="mx-auto w-auto text-lg text-center">
@@ -198,9 +314,9 @@
           </div>
         </div>
       </div>
-      <div id="about" class="px-2 md:px-0 bg-gray-100">
+      <div id="about" class="px-2 md:px-0">
         <div class="container mx-auto grid items-center py-16 gap-8">
-          <div class="text-4xl mx-auto w-auto">
+          <div class="text-3xl md:text-4xl mx-auto w-auto">
             <span class="text-primary">About</span> Us
           </div>
           <div class="mx-auto w-auto text-lg text-center">
@@ -215,7 +331,7 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="bg-gray-100">
       <div class="container mx-auto grid items-center p-4">
         <div class="mx-auto w-auto text-gray-500">
           &copy; 2022-2023 ApplicaSet
