@@ -18,6 +18,11 @@
             </nuxt-link>
           </li>
           <li>
+            <nuxt-link :to="{ path: '/', hash: '#pricing' }" :external="true" class="p-2">
+              Pricing
+            </nuxt-link>
+          </li>
+          <li>
             <nuxt-link :to="{ path: '/', hash: '#contact' }" :external="true" class="p-2">
               Contact
             </nuxt-link>
@@ -98,7 +103,7 @@
               <div class="text-2xl">
                 Consulting
               </div>
-              <div class="text-center text-lg">
+              <div class="text-center text-lg h-24">
                 Expert advice for your business
               </div>
             </div>
@@ -114,7 +119,7 @@
               <div class="text-2xl">
                 Migration
               </div>
-              <div class="text-center text-lg">
+              <div class="text-center text-lg h-24">
                 Seamlessly migrate your business to the cloud
               </div>
             </div>
@@ -130,7 +135,7 @@
               <div class="text-2xl">
                 Development
               </div>
-              <div class="text-center text-lg">
+              <div class="text-center text-lg h-24">
                 Accelerate your business with innovative tools
               </div>
             </div>
@@ -146,7 +151,7 @@
               <div class="text-2xl">
                 Security
               </div>
-              <div class="text-center text-lg">
+              <div class="text-center text-lg h-24">
                 Comprehensive security solutions for your business
               </div>
             </div>
@@ -162,7 +167,7 @@
               <div class="text-2xl">
                 DevOps
               </div>
-              <div class="text-center text-lg">
+              <div class="text-center text-lg h-24">
                 Streamline your workflow with DevOps expertise
               </div>
             </div>
@@ -178,7 +183,7 @@
               <div class="text-2xl">
                 Scale
               </div>
-              <div class="text-center text-lg">
+              <div class="text-center text-lg h-24">
                 Scale your business with ease
               </div>
             </div>
@@ -206,7 +211,7 @@
               <div class="text-2xl">
                 Managed Clusters
               </div>
-              <div class="text-center text-lg">
+              <div class="text-center text-lg h-24">
                 We manage Kubernetes clusters. <br>
                 You use what you need.
               </div>
@@ -223,7 +228,7 @@
               <div class="text-2xl">
                 Cost Effective
               </div>
-              <div class="text-center text-lg">
+              <div class="text-center text-lg h-24">
                 Decrease your cost by paying for what you use, not for a whole cluster
               </div>
             </div>
@@ -239,8 +244,13 @@
               <div class="text-2xl">
                 Avoid Vendor Lock-in
               </div>
-              <div class="text-center text-lg">
-                Most popular cloud services, like AWS, GCP, or Azure have <a href="https://en.wikipedia.org/wiki/Vendor_lock-in" target="_blank" class="underline">vendor lock-in</a>. <br>
+              <div class="text-center text-lg h-24">
+                Most popular cloud services, like AWS, GCP, or Azure have <a
+                  href="https://en.wikipedia.org/wiki/Vendor_lock-in"
+                  target="_blank"
+                  class="underline"
+                >vendor
+                  lock-in</a>. <br>
                 But we care your freedom.
               </div>
             </div>
@@ -256,7 +266,7 @@
               <div class="text-2xl">
                 Multiple Regions
               </div>
-              <div class="text-center text-lg">
+              <div class="text-center text-lg h-24">
                 Different clusters in US, Europe,<br>
                 and counting
               </div>
@@ -273,7 +283,7 @@
               <div class="text-2xl">
                 Fully Featured
               </div>
-              <div class="text-center text-lg">
+              <div class="text-center text-lg h-24">
                 Most useful tools and features like are available on our clusters
               </div>
             </div>
@@ -289,14 +299,92 @@
               <div class="text-2xl">
                 Personalized Support
               </div>
-              <div class="text-center text-lg">
+              <div class="text-center text-lg h-24">
                 We not just provide services, but support you to have no more concern about your infrastructure
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="contact" class="bg-gray-100">
+      <div id="pricing" class="bg-gray-100">
+        <div class="container mx-auto grid items-center py-16 gap-8">
+          <div class="text-3xl md:text-4xl mx-auto w-auto">
+            Our <span class="text-primary">Pricing</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <div class="text-2xl">
+                Starter
+              </div>
+              <div class="text-3xl font-semibold">
+                Free
+              </div>
+              <ul class="text-center space-y-2">
+                <li>0.5 CPU Core</li>
+                <li>0.5GiB Memory</li>
+                <li>5GiB Disk</li>
+                <li>Free Subdomains</li>
+              </ul>
+              <a
+                href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#97;&#112;&#112;&#108;&#105;&#99;&#97;&#115;&#101;&#116;&#46;&#99;&#111;&#109;?subject=Order Starter Plan"
+                class="button primary"
+              >
+                Order Now
+              </a>
+            </div>
+            <div
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <div class="text-2xl">
+                Basic
+              </div>
+              <div class="text-3xl font-semibold relative">
+                $5
+                <span class="text-base absolute left-10 bottom-0">Monthly</span>
+              </div>
+              <ul class="text-center space-y-2">
+                <li>1 CPU Core</li>
+                <li>1GiB Memory</li>
+                <li>10GiB Disk</li>
+                <li>Free Subdomains</li>
+              </ul>
+              <a
+                href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#97;&#112;&#112;&#108;&#105;&#99;&#97;&#115;&#101;&#116;&#46;&#99;&#111;&#109;?subject=Order Basic Plan"
+                class="button primary"
+              >
+                Order Now
+              </a>
+            </div>
+            <div
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
+            >
+              <div class="text-2xl">
+                Custom
+              </div>
+              <div class="text-3xl font-semibold relative">
+                <span class="text-base absolute right-10">From</span>
+                $5
+                <span class="text-base absolute left-10 bottom-0">Monthly</span>
+              </div>
+              <ul class="text-center space-y-2">
+                <li>$2 per CPU Core</li>
+                <li>$2 per 1GiB Memory</li>
+                <li>$1 per 10GiB Disk</li>
+                <li>Free Subdomains</li>
+              </ul>
+              <a
+                href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#97;&#112;&#112;&#108;&#105;&#99;&#97;&#115;&#101;&#116;&#46;&#99;&#111;&#109;?subject=Order Custom Plan"
+                class="button primary"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact">
         <div class="container mx-auto grid items-center py-16 gap-8">
           <div class="mx-auto w-auto">
             <img src="~/assets/images/mail.svg" alt="Cloud" width="64" height="45">
@@ -314,7 +402,7 @@
           </div>
         </div>
       </div>
-      <div id="about" class="px-2 md:px-0">
+      <div id="about" class="bg-gray-100 px-2 md:px-0">
         <div class="container mx-auto grid items-center py-16 gap-8">
           <div class="text-3xl md:text-4xl mx-auto w-auto">
             <span class="text-primary">About</span> Us
