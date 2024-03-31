@@ -422,7 +422,7 @@
     <footer class="bg-gray-100">
       <div class="container mx-auto grid items-center p-4">
         <div class="mx-auto w-auto text-gray-500">
-          &copy; 2022-2023 ApplicaSet
+          &copy; 2022-{{ new Date().getFullYear() }} ApplicaSet
         </div>
       </div>
     </footer>
