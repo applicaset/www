@@ -190,7 +190,66 @@
           </div>
         </div>
       </div>
-      <div id="paas" class="px-2 md:px-0">
+      <div id="trusted-by" class="px-2 md:px-0">
+        <div class="container mx-auto grid items-center py-16 gap-8">
+          <div class="text-3xl md:text-4xl mx-auto w-auto">
+            <span class="text-primary">Trusted</span> by
+          </div>
+          <div class="mx-auto w-auto text-lg text-center">
+            Some companies that trusted <span class="text-primary">ApplicaSet</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <a
+              href="https://utrack.energy"
+              target="_blank"
+              class="bg-gray-100 hover:shadow-xl duration-300 rounded px-8 pb-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/trusted-by/utrack.svg"
+                alt="uTrack Energy"
+                width="256"
+                height="256"
+                class="h-64"
+              >
+              <div class="text-2xl">
+                uTrack&trade; Energy
+              </div>
+            </a>
+            <a
+              href="https://chang.education"
+              target="_blank"
+              class="bg-gray-100 hover:shadow-xl duration-300 rounded px-8 pb-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/trusted-by/chang.svg"
+                alt="Chang Education"
+                width="256"
+                height="256"
+                class="h-64"
+              >
+              <div class="text-2xl">
+                Chang Education
+              </div>
+            </a>
+            <a
+              href="https://crstrip.com/"
+              target="_blank"
+              class="bg-gray-100 hover:shadow-xl duration-300 rounded px-8 pb-8 shadow flex flex-col gap-4 items-center"
+            >
+              <img
+                src="~/assets/images/trusted-by/crstrip.svg"
+                alt="CRS Trip"
+                width="256"
+                height="256"
+              >
+              <div class="text-2xl">
+                CRS Trip
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="paas" class="bg-gray-100 px-2 md:px-0">
         <div class="container mx-auto grid items-center py-16 gap-8">
           <div class="text-3xl md:text-4xl mx-auto w-auto">
             <span class="text-primary">Platform</span> as a Service
@@ -200,7 +259,7 @@
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div
-              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
             >
               <img
                 src="~/assets/images/cloud-server.svg"
@@ -217,7 +276,7 @@
               </div>
             </div>
             <div
-              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
             >
               <img
                 src="~/assets/images/money-save.svg"
@@ -233,7 +292,7 @@
               </div>
             </div>
             <div
-              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
             >
               <img
                 src="~/assets/images/cloud-lock.svg"
@@ -255,7 +314,7 @@
               </div>
             </div>
             <div
-              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
             >
               <img
                 src="~/assets/images/multiple-regions.svg"
@@ -272,7 +331,7 @@
               </div>
             </div>
             <div
-              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
             >
               <img
                 src="~/assets/images/features.svg"
@@ -288,7 +347,7 @@
               </div>
             </div>
             <div
-              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
+              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
             >
               <img
                 src="~/assets/images/consulting.svg"
@@ -306,14 +365,14 @@
           </div>
         </div>
       </div>
-      <div id="pricing" class="bg-gray-100">
+      <div id="pricing">
         <div class="container mx-auto grid items-center py-16 gap-8">
           <div class="text-3xl md:text-4xl mx-auto w-auto">
             Our <span class="text-primary">Pricing</span>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div
-              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
+              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center animate-bounce"
             >
               <div class="text-2xl">
                 Starter
@@ -335,7 +394,7 @@
               </a>
             </div>
             <div
-              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
+              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
             >
               <div class="text-2xl">
                 Basic
@@ -358,7 +417,7 @@
               </a>
             </div>
             <div
-              class="bg-white rounded p-8 shadow flex flex-col gap-4 items-center"
+              class="bg-gray-100 rounded p-8 shadow flex flex-col gap-4 items-center"
             >
               <div class="text-2xl">
                 Custom
@@ -384,7 +443,7 @@
           </div>
         </div>
       </div>
-      <div id="contact">
+      <div id="contact" class="bg-gray-100">
         <div class="container mx-auto grid items-center py-16 gap-8">
           <div class="mx-auto w-auto">
             <img src="~/assets/images/mail.svg" alt="Cloud" width="64" height="45">
@@ -402,7 +461,7 @@
           </div>
         </div>
       </div>
-      <div id="about" class="bg-gray-100 px-2 md:px-0">
+      <div id="about" class="px-2 md:px-0">
         <div class="container mx-auto grid items-center py-16 gap-8">
           <div class="text-3xl md:text-4xl mx-auto w-auto">
             <span class="text-primary">About</span> Us
@@ -463,7 +522,7 @@ html {
 }
 
 .button.primary {
-  @apply bg-teal-700 text-white;
+  @apply bg-teal-700 text-white hover:opacity-90 duration-150;
 }
 
 .text-primary {
