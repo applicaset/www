@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.as-button {
+    @apply cursor-pointer duration-200;
+    @apply font-semibold;
+    @apply shadow-sm;
+
+    /*&.size-base */
+    @apply text-base rounded;
+    @apply px-4 py-2;
+
+    &.size-lg {
+        @apply text-lg rounded-md;
+        @apply px-5 py-2.5;
+    }
+
+    &.size-xl {
+        @apply text-xl rounded-lg;
+        @apply px-6 py-3;
+    }
+
+    &.is-primary {
+        @apply bg-primary-600 text-white hover:bg-primary-500;
+        @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600;
+    }
+
+    &.is-outlined {
+        @apply bg-white text-gray-900 hover:bg-gray-50;
+        @apply ring-1 ring-inset ring-gray-300;
+    }
+}
+
+.as-card {
+    @apply overflow-hidden rounded-lg bg-white shadow;
+    @apply px-4 py-5 sm:p-6;
+
+    @apply flex flex-col gap-4 items-center;
+}
+
+.text-primary {
+    color: #008b8b;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}

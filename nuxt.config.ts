@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   app: {
     head: {
       title: 'ApplicaSet',
@@ -42,23 +43,30 @@ export default defineNuxtConfig({
       }
     }
   },
+
   css: ['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {}
     }
   },
+
   modules: [
     '@nuxtjs/google-fonts',
     '@zadigetvoltaire/nuxt-gtm'
   ],
+
   googleFonts: {
     families: {
       'Open+Sans': true
     }
   },
+
   gtm: {
     id: 'GTM-KQZ9RLSB'
-  }
+  },
+
+  compatibilityDate: '2025-01-18'
 })
