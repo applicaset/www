@@ -6,7 +6,8 @@
           <img src="~/assets/images/logo.svg" alt="ApplicaSet" width="48" height="48">
           <span class="mx-2">ApplicaSet</span>
         </a>
-        <ul class="flex-row gap-4 hidden sm:flex">
+        <!--<ul class="flex-row gap-4 hidden sm:flex">-->
+        <ul class="flex-row gap-4 flex">
           <li>
             <a href="#services" class="p-2">
               Services
@@ -33,7 +34,7 @@
             </a>
           </li>
         </ul>
-        <ul class="flex flex-row gap-4">
+        <ul v-if="false" class="flex flex-row gap-4">
           <li>
             <as-button href="https://console.applicaset.com" is-primary>
               Console
@@ -46,6 +47,8 @@
       <hero-section />
       <services-section id="services" />
       <trusted-by-section />
+      <pass-section v-if="false" id="paas" />
+      <pricing-section v-if="false" id="pricing" />
       <contact-section id="contact" />
       <about-section id="about" />
     </main>
@@ -65,4 +68,6 @@ import ServicesSection from '~/components/www/services-section.vue'
 import TrustedBySection from '~/components/www/trusted-by-section.vue'
 import ContactSection from '~/components/www/contact-section.vue'
 import AboutSection from '~/components/www/about-section.vue'
+import PassSection from '~/components/www/pass-section.vue'
+import PricingSection from '~/components/www/pricing-section.vue'
 </script>

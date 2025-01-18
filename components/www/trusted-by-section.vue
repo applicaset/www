@@ -1,13 +1,13 @@
 <template>
   <section :id="props.id" class="px-2 md:px-0">
     <div class="container mx-auto grid items-center py-16 gap-8">
-      <div class="text-3xl md:text-4xl mx-auto w-auto">
+      <h2 class="font-semibold text-3xl md:text-4xl mx-auto w-auto">
         <span class="text-primary">Trusted</span> by
-      </div>
+      </h2>
       <div class="mx-auto w-auto text-lg text-center">
         Some companies that trusted <span class="text-primary">ApplicaSet</span>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 px-4 md:px-8">
         <as-card
           href="https://utrack.energy"
           target="_blank"

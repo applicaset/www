@@ -1,15 +1,15 @@
 <template>
   <section :id="props.id" class="px-2 md:px-0 bg-gray-50">
     <div class="container mx-auto grid items-center py-16 gap-8">
-      <div class="text-3xl md:text-4xl mx-auto w-auto">
+      <h2 class="font-semibold text-3xl md:text-4xl mx-auto w-auto">
         Our <span class="text-primary">Services</span>
-      </div>
+      </h2>
       <div class="mx-auto w-auto text-lg text-center">
         Custom software and
         <span class="text-primary">cloud</span> solutions to fit your
         business needs
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 px-4 md:px-8">
         <as-card>
           <img
             src="~/assets/images/technical-consultation.svg"
@@ -17,9 +17,9 @@
             width="64"
             height="64"
           >
-          <div class="text-2xl">
+          <h3 class="text-2xl">
             Consulting
-          </div>
+          </h3>
           <div class="text-center text-lg h-24">
             Expert advice for your business
           </div>
@@ -31,9 +31,9 @@
             width="64"
             height="64"
           >
-          <div class="text-2xl">
+          <h3 class="text-2xl">
             Migration
-          </div>
+          </h3>
           <div class="text-center text-lg h-24">
             Seamlessly migrate your business to the cloud
           </div>
@@ -45,9 +45,9 @@
             width="64"
             height="64"
           >
-          <div class="text-2xl">
+          <h3 class="text-2xl">
             Development
-          </div>
+          </h3>
           <div class="text-center text-lg h-24">
             Accelerate your business with innovative tools
           </div>
@@ -59,9 +59,9 @@
             width="64"
             height="64"
           >
-          <div class="text-2xl">
+          <h3 class="text-2xl">
             Security
-          </div>
+          </h3>
           <div class="text-center text-lg h-24">
             Comprehensive security solutions for your business
           </div>
@@ -73,9 +73,9 @@
             width="64"
             height="64"
           >
-          <div class="text-2xl">
+          <h3 class="text-2xl">
             DevOps
-          </div>
+          </h3>
           <div class="text-center text-lg h-24">
             Streamline your workflow with DevOps expertise
           </div>
@@ -87,9 +87,9 @@
             width="64"
             height="64"
           >
-          <div class="text-2xl">
+          <h3 class="text-2xl">
             Scale
-          </div>
+          </h3>
           <div class="text-center text-lg h-24">
             Scale your business with ease
           </div>

@@ -1,9 +1,9 @@
 <template>
   <section :id="props.id" class="bg-gray-50 px-2 md:px-0">
     <div class="container mx-auto grid items-center py-16 gap-8">
-      <div class="text-3xl md:text-4xl mx-auto w-auto">
+      <h2 class="font-semibold text-3xl md:text-4xl mx-auto w-auto">
         <span class="text-primary">Platform</span> as a Service
-      </div>
+      </h2>
       <div class="mx-auto w-auto text-lg text-center">
         Experience elevated flight with the force of <span class="text-primary">Kubernetes</span> engine
       </div>

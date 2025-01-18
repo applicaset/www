@@ -1,9 +1,9 @@
 <template>
   <section :id="props.id" class="px-2 md:px-0">
-    <div class="container mx-auto grid items-center py-16 gap-8">
-      <div class="text-3xl md:text-4xl mx-auto w-auto">
+    <div class="container mx-auto grid items-center py-16 gap-8 px-4 md:px-8">
+      <h2 class="font-semibold text-3xl md:text-4xl mx-auto w-auto">
         <span class="text-primary">About</span> Us
-      </div>
+      </h2>
       <div class="mx-auto w-auto text-lg text-center">
         At ApplicaSet, we are a team of forward-thinking engineers and
         entrepreneurs with a passion for leveraging cutting-edge cloud

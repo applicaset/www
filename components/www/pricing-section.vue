@@ -1,9 +1,9 @@
 <template>
   <section :id="props.id">
     <div class="container mx-auto grid items-center py-16 gap-8">
-      <div class="text-3xl md:text-4xl mx-auto w-auto">
+      <h2 class="font-semibold text-3xl md:text-4xl mx-auto w-auto">
         Our <span class="text-primary">Pricing</span>
-      </div>
+      </h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
           class="bg-gray-50 rounded p-8 shadow flex flex-col gap-4 items-center animate-bounce"

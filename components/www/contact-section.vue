@@ -1,12 +1,12 @@
 <template>
   <section :id="props.id" class="bg-gray-50">
-    <div class="container mx-auto grid items-center py-16 gap-8">
+    <div class="container mx-auto grid items-center py-16 gap-8 px-4 md:px-8">
       <div class="mx-auto w-auto">
         <img src="~/assets/images/mail.svg" alt="Cloud" width="64" height="45">
       </div>
-      <div class="text-3xl md:text-4xl mx-auto w-auto">
+      <h2 class="font-semibold text-3xl md:text-4xl mx-auto w-auto">
         <span class="text-primary">Contact</span> Us
-      </div>
+      </h2>
       <div class="mx-auto w-auto text-lg text-center">
         Contact us now for a free consultation meeting or early access to console.
       </div>
