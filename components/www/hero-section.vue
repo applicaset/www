@@ -25,7 +25,7 @@
           </as-button>
         </div>
         <div class="text-sm text-center lg:text-start">
-          Contact us now for a free consultation meeting or early access to console.
+          Get a free consultation meeting or early access to console.
         </div>
       </div>
       <div

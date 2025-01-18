@@ -10,88 +10,18 @@
         business needs
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 px-4 md:px-8">
-        <as-card>
+        <as-card v-for="service in services" :key="service.title">
           <img
-            src="~/assets/images/technical-consultation.svg"
-            alt="Consulting"
+            :src="service.imageUrl"
+            :alt="service.title"
             width="64"
             height="64"
           >
           <h3 class="text-2xl">
-            Consulting
+            {{ service.title }}
           </h3>
           <div class="text-center text-lg h-24">
-            Expert advice for your business
-          </div>
-        </as-card>
-        <as-card>
-          <img
-            src="~/assets/images/accelerate.svg"
-            alt="Migration"
-            width="64"
-            height="64"
-          >
-          <h3 class="text-2xl">
-            Migration
-          </h3>
-          <div class="text-center text-lg h-24">
-            Seamlessly migrate your business to the cloud
-          </div>
-        </as-card>
-        <as-card>
-          <img
-            src="~/assets/images/development.svg"
-            alt="Development"
-            width="64"
-            height="64"
-          >
-          <h3 class="text-2xl">
-            Development
-          </h3>
-          <div class="text-center text-lg h-24">
-            Accelerate your business with innovative tools
-          </div>
-        </as-card>
-        <as-card>
-          <img
-            src="~/assets/images/security.svg"
-            alt="Security"
-            width="64"
-            height="64"
-          >
-          <h3 class="text-2xl">
-            Security
-          </h3>
-          <div class="text-center text-lg h-24">
-            Comprehensive security solutions for your business
-          </div>
-        </as-card>
-        <as-card>
-          <img
-            src="~/assets/images/devops.svg"
-            alt="DevOps"
-            width="64"
-            height="64"
-          >
-          <h3 class="text-2xl">
-            DevOps
-          </h3>
-          <div class="text-center text-lg h-24">
-            Streamline your workflow with DevOps expertise
-          </div>
-        </as-card>
-        <as-card>
-          <img
-            src="~/assets/images/scale.svg"
-            alt="Scale"
-            width="64"
-            height="64"
-          >
-          <h3 class="text-2xl">
-            Scale
-          </h3>
-          <div class="text-center text-lg h-24">
-            Scale your business with ease
+            {{ service.description }}
           </div>
         </as-card>
       </div>
@@ -102,5 +32,45 @@
 <script setup lang="ts">
 import AsCard from '~/components/basic/as-card.vue'
 
+import TechnicalConsultationUrl from '~/assets/images/technical-consultation.svg?url'
+import AccelerateUrl from '~/assets/images/accelerate.svg?url'
+import DevelopmentUrl from '~/assets/images/development.svg?url'
+import SecurityUrl from '~/assets/images/security.svg?url'
+import DevOpsUrl from '~/assets/images/devops.svg?url'
+import ScaleUrl from '~/assets/images/scale.svg?url'
+
 const props = defineProps<{id?: string}>()
+
+const services = [
+  {
+    title: 'Consulting',
+    imageUrl: TechnicalConsultationUrl,
+    description: 'Expert advice for your business'
+  },
+  {
+    title: 'Migration',
+    imageUrl: AccelerateUrl,
+    description: 'Seamlessly migrate your business to the cloud'
+  },
+  {
+    title: 'Development',
+    imageUrl: DevelopmentUrl,
+    description: 'Accelerate your business with innovative tools'
+  },
+  {
+    title: 'Security',
+    imageUrl: SecurityUrl,
+    description: 'Comprehensive security solutions for your business'
+  },
+  {
+    title: 'DevOps',
+    imageUrl: DevOpsUrl,
+    description: 'Streamline your workflow with DevOps expertise'
+  },
+  {
+    title: 'Scale',
+    imageUrl: ScaleUrl,
+    description: 'Scale your business with ease'
+  }
+]
 </script>

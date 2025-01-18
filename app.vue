@@ -4,7 +4,7 @@
       <nav class="container mx-auto p-2 flex justify-between items-center">
         <a href="#" class="flex items-center">
           <img src="~/assets/images/logo.svg" alt="ApplicaSet" width="48" height="48">
-          <span class="mx-2">ApplicaSet</span>
+          <h1 class="mx-2">ApplicaSet</h1>
         </a>
         <!--<ul class="flex-row gap-4 hidden sm:flex">-->
         <ul class="flex-row gap-4 flex">
@@ -46,7 +46,7 @@
     <main class="relative">
       <hero-section />
       <services-section id="services" />
-      <trusted-by-section />
+      <customers-section />
       <pass-section v-if="false" id="paas" />
       <pricing-section v-if="false" id="pricing" />
       <contact-section id="contact" />
@@ -65,7 +65,7 @@
 import AsButton from '~/components/basic/as-button.vue'
 import HeroSection from '~/components/www/hero-section.vue'
 import ServicesSection from '~/components/www/services-section.vue'
-import TrustedBySection from '~/components/www/trusted-by-section.vue'
+import CustomersSection from '~/components/www/customers-section.vue'
 import ContactSection from '~/components/www/contact-section.vue'
 import AboutSection from '~/components/www/about-section.vue'
 import PassSection from '~/components/www/pass-section.vue'
