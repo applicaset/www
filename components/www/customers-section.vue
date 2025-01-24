@@ -53,8 +53,8 @@ const costumers = [
   },
   {
     title: 'CRS Trip',
-    logoUrl: CRSTripLogoUrl,
-    homePageUrl: 'https://crstrip.com/'
+    logoUrl: CRSTripLogoUrl
+    // homePageUrl: 'https://crstrip.com/'
   }
 ]
 </script>
