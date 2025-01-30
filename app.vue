@@ -52,13 +52,7 @@
       <contact-section id="contact" />
       <about-section id="about" />
     </main>
-    <footer class="bg-gray-50">
-      <div class="container mx-auto grid items-center p-4">
-        <div class="mx-auto w-auto text-gray-500">
-          &copy; 2022-{{ new Date().getFullYear() }} ApplicaSet
-        </div>
-      </div>
-    </footer>
+    <website-footer />
   </div>
 </template>
 <script setup>
@@ -70,4 +64,5 @@ import ContactSection from '~/components/www/contact-section.vue'
 import AboutSection from '~/components/www/about-section.vue'
 import PassSection from '~/components/www/pass-section.vue'
 import PricingSection from '~/components/www/pricing-section.vue'
+import WebsiteFooter from '~/components/www/website-footer.vue'
 </script>
